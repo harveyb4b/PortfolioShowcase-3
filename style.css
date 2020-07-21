@@ -1,0 +1,104 @@
+body{
+    background-image: url('clouds.jpg');;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+main{
+    
+    background: linear-gradient(180deg, rgba(255,255,255,.9) 50%, rgba(2,0,36,0) 100%);
+    height:100vh;
+}
+
+header{
+    background: rgb(255,255,255, .95);
+    color:rgb(35, 86, 255);
+    text-align:center;
+    padding:10px;
+    border-bottom:1px solid rgb(35, 86, 255);
+}
+
+.search{
+
+    height:100%;
+    padding:20px;
+}
+
+#search-box{
+    width:80%;
+}
+
+.city-display{
+    padding:20px;
+    height:50%;
+}
+
+.forecast-display{
+    height:100%;
+    padding:20px;
+}
+
+#uv-index{
+    padding:5px 10px;
+    color:greenyellow;
+}
+
+.forecast{
+    width:19%;
+    margin-right:1%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(58,121,9,1) 38%, rgba(0,212,255,1) 100%);
+
+    background-color:rgb(35, 86, 255);
+    color:white;
+    display:inline-block;
+    padding:10px;
+    border-radius:10px;
+}
+
+.forecast div:first-child{
+    font-weight:bold;
+}
+
+.main-display{
+    background: rgb(2,0,36);
+
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(58,121,9,1) 38%, rgba(0,212,255,1) 100%);
+    color:white;
+}
+
+.bold-font{
+    font-weight:bold;
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(2,0,36,0) 100%);
+}
+
+.city-list{
+    cursor:pointer;
+    color:darkblue;
+}
+
+.city-list:hover{
+    color:rgb(35, 86, 255);
+}
+
+#weather-icon{
+    float:right;
+}
+
+@media only screen and (max-width: 600px) {
+    .forecast{
+        width:100%;
+        margin-bottom:10px;
+        text-align:center;
+    }
+
+    .card-title{
+        text-align:center;
+    }
+
+    .forecast-display{
+        padding:0;
+        margin:20px 0 0 0;
+    }
+}

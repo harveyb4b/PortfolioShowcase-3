@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <title>Harvey Weather Dashboard</title>
+  </head>
+  <body>
+    <header class="row">
+        <div class="col"><h1> 5 Day Weather  Forecast </h1></div>
+    </header>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 search">
+            <a href="#" id="clear-search"><strong> Start Over  </strong></a><br>
+                
+                <input placeholder = "Search For City" type="text" id="search-box">
+                &nbsp;<div id="search-button" class="btn btn-primary"><i class="fa fa-search"></i></div>
+                <div id="city-output"></div>
+                
+            </div>
+            <div class="col-md-9 city-display">
+                <div class="row">
+                    <div class="col">
+                        <div class="card main-display" style="width: 100%; height:100%; border:0;">
+                            <div class="card-body">
+                              <h2 class="card-title"><span id="city">City</span> (<span id="date"></span>)</h2><img id="weather-icon">
+                              <p class="card-text">Temperature: <span id="temperature"></span></p>
+                              <p class="card-text">Humidity: <span id="humidity"></span></p>
+                              <p class="card-text">Wind Speed: <span id="wind-speed"></span></p>
+                              <p class="card-text">UV Index: <span id="uv-index"></span></p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="row forecast-display">
+                    <div class="col" style="padding:0;">
+                      <div class="card" style="width: 100%; height:100%;">
+                        <div class="card-body">
+                        <h5 class="card-title">Next 5 Day Forecast</h5>
+                        <div id="forecast-output">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="weather.js"></script>
+</html>
